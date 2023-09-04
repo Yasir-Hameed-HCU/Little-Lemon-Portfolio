@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coursera_Exercise</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <header>
+        <img src="images.png" alt="Logo">
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="location.html">Location</a></li>
+            <li><a href="blog.html">Blog</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h1>Blog</h1>
+        <section class="articles">
+            <article>
+                <h2>20% Discount This Weekend</h2>
+                <p>Come down to Little Lemon Restaurant and enjoy a 20% discount.</p>
+            </article>
+            <article>
+                <h2>Our New Menu</h2>
+                <p>We have updated our menu with new Asian cuisines.</p>
+            </article>
+        </section>
+        <section class="sign-up-form">
+            <h1>Sign Up</h1>
+            <form id="signup-form">
+                <div class="form-field">
+                    <label for="user_first_name">First Name</label>
+                    <input type="text" id="user_first_name" name="user_first_name" required minlength="5" maxlength="12">
+                </div>
+                <div class="form-field">
+                    <label for="user_last_name">Last Name</label>
+                    <input type="text" id="user_last_name" name="user_last_name" required>
+                </div>
+                <div class="form-field">
+                    <label for="user_email">Email Address</label>
+                    <input type="email" id="user_email" name="user_email" required>
+                </div>
+                <div class="form-field">
+                    <label for="user_password">Password</label>
+                    <input type="password" id="user_password" name="user_password" required>
+                </div>
+                <div class="form-field">
+                    <label for="user_confirm_password">Confirm Password</label>
+                    <input type="password" id="user_confirm_password" name="user_confirm_password" required>
+                </div>
+                <button type="submit">Sign Up</button>
+            </form>
+        </section>
+
+        <h1>Book a table</h1>
+        <from method=" post">
+
+            <fieldset id="size">
+<input type="radio" value="2" name="size"> 2 person Table
+<input type="radio" value="4" name="size" checked> 4 person table 
+<input type="radio" value="6" name="size"> 6 person table
+            </fieldset>
+            <fieldset id="Location">
+    <input type="radio" value="indoor" name="location" checked>
+    <input type="radio" value="outdoor" name="location">
+            </fieldset>
+            <button type="submit"> Book Table</button>
+        </from>
+        <h2>About</h2>
+        <video  width="320" height="240"controls muted>
+            <source src="video.mp4" type="video/mp4">
+        </video>
+        <p>Little lemon is family owned asian resturent , Focused on traditional asian cusine</p>
+        <audio loop controls>
+            <source src="music.ogg" type="audio/ogg">
+        </audio>
+    </main>
+    <footer>
+        <p>Copyright &copy; Little Lemon</p>
+    </footer>
+</body>
+</html>
